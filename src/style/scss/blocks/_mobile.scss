@@ -1,0 +1,87 @@
+.mobile{
+
+  background-color: $deep-blue;
+  padding-top: 108px;
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title{
+    color: #159BE8;
+    font-size: 18px;
+    padding-bottom: 144px;
+  }
+
+  &__text{
+    font-size: 12px;
+    line-height: 30px;
+    max-width: 617px;
+    padding-bottom: 35px;
+  }
+
+  &__column-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 56px;
+  }
+
+  &__icon{
+    padding-bottom: 10px;
+  }
+
+  &__column-title{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__column-text{
+    font-size: 11px;
+    line-height: 24px;
+    max-width: 269px;
+  }
+
+  &__link-holder{
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: "";
+      background-image: url('../../../../src/img/button-frame.svg');
+      width: 70px;
+      height: 70px;
+      left: 136px;
+      top: -17px;
+    }
+  }
+
+  &__link{
+    color: white;
+    background-color: #159BE8;
+    padding: 16px 32px 16px 23px;
+    border-radius: 100px;
+
+    &:hover{
+      background-color: white;
+      color: #159BE8;
+      transition: ease-in-out 0.3s;
+    }
+
+
+  }
+
+  &__image-holder{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image1{
+    max-width: 300px;
+  }
+
+  &__image2{
+    max-width: 300px;
+  }
+}

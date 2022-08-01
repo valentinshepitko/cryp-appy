@@ -1,0 +1,54 @@
+.header{
+
+  background-color: $dark-blue;
+  padding-top: 32px;
+  padding-bottom: 10px;
+  position:-webkit-sticky; position:sticky;
+  top:0;
+  z-index: 10;
+
+
+  &__container{
+    max-width: 1352px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__nav-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  &__nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__nav-link{
+    color: white;
+
+    &:hover{
+      color: #189CE8;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  &__buy{
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    padding: 15px 32px;
+    color: white;
+
+    &:hover{
+      background-color: white;
+      color: $dark-blue;
+      transition: ease-in-out 0.4s;
+    }
+  }
+}
