@@ -1,0 +1,61 @@
+.best{
+
+  background-color: $deep-blue;
+  padding-bottom: 160px;
+
+  &__pre-title{
+    color: #159BE8;
+    text-align: center;
+    padding-bottom: 28px;
+    text-transform: uppercase;
+  }
+
+  &__title{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 54px;
+    font-weight: 400;
+    max-width: 623px;
+    padding-bottom: 42px;
+  }
+
+
+  &__logo-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+
+  &__column-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__column-stars{
+    padding-bottom: 25px;
+  }
+
+  &__column-text{
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 288px;
+    padding-bottom: 24px;
+  }
+
+  &__column-profile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__column-name-holder{
+    padding-top: 8px;
+  }
+
+  &__profile{
+    font-size: 14px;
+  }
+}

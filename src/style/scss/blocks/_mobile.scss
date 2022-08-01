@@ -1,7 +1,7 @@
 .mobile{
 
-  background-color: $deep-blue;
   padding-top: 108px;
+  padding-bottom: 160px;
 
   &__holder{
     display: flex;
@@ -12,6 +12,7 @@
     color: #159BE8;
     font-size: 18px;
     padding-bottom: 144px;
+    text-transform: uppercase;
   }
 
   &__text{

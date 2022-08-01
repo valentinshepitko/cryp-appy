@@ -1,0 +1,95 @@
+.pricing{
+
+  padding-top: 180px;
+  padding-bottom: 50px;
+
+  &__pre-title{
+    text-align: center;
+    color: #159BE8;
+    padding-bottom: 28px;
+    text-transform: uppercase;
+  }
+
+  &__title{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    padding-bottom: 8px;
+    max-width: 645px;
+  }
+
+  &__text{
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 30px;
+    padding-bottom: 76px;
+  }
+
+  &__column-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__column{
+    max-width: 390px;
+    width: 100%;
+    background-color: #0C0D2E;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 5px 5px;
+    border-top: 4px solid #159BE8;
+
+    &_red{
+      max-width: 390px;
+      width: 100%;
+      background-color: #0C0D2E;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 0 0 5px 5px;
+      border-top: 4px solid #F95B74;
+    }
+  }
+
+  &__column-title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+
+  &__column-price{
+    font-size: 40px;
+    padding-bottom: 31px;
+    text-align: center;
+  }
+
+  &__column-text{
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 47px;
+  }
+
+  &__column-link-holder{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  &__column-link{
+    border-radius: 100px;
+    color: white;
+    padding: 16px 32px;
+    border: 2px solid #FFFFFF;
+
+    &:hover{
+      background-color: white;
+      color: $dark-blue;
+      transition: ease-in-out 0.3s;
+    }
+  }
+}
