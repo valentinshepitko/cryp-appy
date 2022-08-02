@@ -6,6 +6,18 @@
   &__holder{
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 1279px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__content{
+
+    @media (max-width: 1279px) {
+      padding-bottom: 80px;
+    }
   }
 
   &__title{
@@ -13,6 +25,10 @@
     font-size: 18px;
     padding-bottom: 144px;
     text-transform: uppercase;
+
+    @media (max-width: 1279px) {
+      padding-bottom: 40px;
+    }
   }
 
   &__text{
@@ -69,13 +85,21 @@
       color: #159BE8;
       transition: ease-in-out 0.3s;
     }
-
-
   }
 
   &__image-holder{
     display: flex;
     flex-wrap: wrap;
+    
+
+
+    @include breakpoint('xl'){
+      flex-wrap: nowrap;
+    }
+
+    @media (max-width: 850px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__image1{

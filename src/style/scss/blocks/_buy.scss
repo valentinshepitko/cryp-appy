@@ -1,0 +1,60 @@
+.buy{
+
+  padding-bottom: 80px;
+
+  &__holder{
+    background-color: $dark-blue;
+    border-radius: 8px;
+    padding-bottom: 120px;
+  }
+
+  &__title{
+    padding-top: 140px;
+    padding-bottom: 21px;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  &__text{
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 44px;
+  }
+
+  &__button-holder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__buy{
+    border-radius: 100px;
+    background-color: #159BE8;
+    color: white;
+    padding: 16px 32px;
+
+    &:hover{
+      background-color: white;
+      color: #159BE8;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  &__view{
+    border-radius: 100px;
+    border: 2px solid #FFFFFF;
+    padding: 16px 32px;
+    color: white;
+
+    &:hover{
+      background-color: #159BE8;
+      color: white;
+      transition: ease-in-out 0.3s;
+    }
+  }
+}

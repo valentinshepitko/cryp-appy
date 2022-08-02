@@ -1,0 +1,65 @@
+.footer{
+
+  padding-bottom: 50px;
+
+  &__logo{
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  &__title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+
+  &__social-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 35px;
+    align-items: center;
+  }
+
+  &__form{
+    text-align: center;
+  }
+
+  &__form-title{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  &__input{
+    max-width: 400px;
+    width: 100%;
+    background-color: $deep-blue;
+    border: 2px solid #282B53;
+    border-radius: 1px;
+    max-height: 48px;
+    height: 48px;
+    margin-bottom: 52px;
+    color: white;
+  }
+
+  &__submit{
+    text-align: center;
+    border-radius: 100px;
+    background-color: #159BE8;
+    display: block;
+    padding: 16px 32px;
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    &:hover{
+      background-color: white;
+      color: #159BE8;
+    }
+  }
+}
+
