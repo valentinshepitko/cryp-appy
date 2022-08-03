@@ -54,7 +54,27 @@ img {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
+}
+.header.active .header__nav {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.header.active .header__burger span {
+  display: none;
+}
+.header.active .header__burger::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(45deg);
+}
+.header.active .header__burger::after {
+  bottom: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .header__container {
   max-width: 1352px;
@@ -65,15 +85,43 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 640px) {
+  .header__logo {
+    max-width: 120px;
+  }
+}
 .header__nav-holder {
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
 }
+@media (max-width: 768px) {
+  .header__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #010225;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    padding-top: 170px;
+    overflow: hidden;
+  }
+}
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+@media (max-width: 768px) {
+  .header__nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .header__nav-link {
   color: white;
@@ -92,6 +140,68 @@ img {
   background-color: white;
   color: #0C0D2E;
   transition: ease-in-out 0.4s;
+}
+@media (max-width: 767px) {
+  .header__buy {
+    padding: 11px 20px;
+    margin-right: 75px;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__burger {
+    display: block;
+    position: absolute;
+    top: 49%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 6;
+  }
+}
+@media (max-width: 640px) {
+  .header__burger {
+    top: 58%;
+  }
+}
+.header__burger::before {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all ease-in-out 0.3s;
+  background-color: white;
+}
+.header__burger::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all ease-in-out 0.3s;
+  background-color: white;
+}
+.header__burger span {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: all ease-in-out 0.3s;
 }
 
 .hero {

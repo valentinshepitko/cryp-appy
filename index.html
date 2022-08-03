@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/css/main.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="src/js/main.js"></script>
 </head>
 <body>
 <header class="header">
@@ -18,17 +24,20 @@
         <div class="header__nav-holder">
             <nav class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Benefits</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Features</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Reviews</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Pricing</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+                    <li class="header__nav-item"><a href="#app" class="header__nav-link">Benefits</a></li>
+                    <li class="header__nav-item"><a href="#launch" class="header__nav-link">Features</a></li>
+                    <li class="header__nav-item"><a href="#reviews" class="header__nav-link">Reviews</a></li>
+                    <li class="header__nav-item"><a href="#pricing" class="header__nav-link">Pricing</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
                 </ul>
             </nav>
             <div class="header__buy-holder">
                 <a href="#" class="header__buy">CrypAppy</a>
             </div>
         </div>
+        <button class="header__burger">
+            <span></span>
+        </button>
     </div>
 </header>
 <main class="main">
@@ -54,7 +63,7 @@
         <img src="src/img/phone.png" alt="" class="hero__background">
     </section>
 <!--your app-->
-<section class="app">
+<section class="app" id="app">
     <div class="container">
         <h2 class="app__title">
             New crypto finance app
@@ -117,7 +126,7 @@
     </div>
 </section>
 <!--launch your app-->
-<section class="launch">
+<section class="launch" id="launch">
     <div class="container">
         <h2 class="launch__title">
             A perfect landing page to help launch your app
@@ -211,7 +220,7 @@
     </div>
 </section>
 <!--mobile-->
-<section class="mobile">
+<section class="mobile" id="mobile">
     <div class="container">
         <div class="mobile__holder">
             <div class="mobile__content">
@@ -263,7 +272,7 @@
     </div>
 </section>
 <!--best-->
-<section class="best">
+<section class="best" id="reviews">
     <div class="container">
         <div class="best__pre-title">
             <span>
@@ -385,7 +394,7 @@
     </div>
 </section>
 <!--pricing-->
-<section class="pricing">
+<section class="pricing" id="pricing">
     <div class="container">
         <div class="pricing__pre-title">
             <span>
@@ -484,7 +493,7 @@
     </div>
 </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="container">
         <div class="footer__logo-holder">
             <a href="#" class="footer__link">
