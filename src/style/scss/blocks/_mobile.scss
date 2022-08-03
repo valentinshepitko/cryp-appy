@@ -104,9 +104,17 @@
 
   &__image1{
     max-width: 300px;
+
+    @media (max-width: 767px) {
+      max-width: 250px;
+    }
   }
 
   &__image2{
     max-width: 300px;
+
+    @media (max-width: 767px) {
+      max-width: 250px;
+    }
   }
 }

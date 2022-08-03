@@ -3,6 +3,10 @@
   background-color: $deep-blue;
   padding-bottom: 160px;
 
+  @media (max-width: 640px) {
+    padding-bottom: 70px;
+  }
+
   &__pre-title{
     color: #159BE8;
     text-align: center;
@@ -26,12 +30,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 80px;
+
+    @media (max-width: 640px) {
+      margin: 0 auto;
+      width: 50%;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+  
+  &__logo{
+
+    @media (max-width: 1279px) {
+      width: 150px;
+    }
+
+    @media (max-width: 768px) {
+      width: 120px;
+    }
   }
 
   &__column-holder{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 640px) {
+      justify-content: center;
+      width: 50%;
+      margin: 0 auto;
+    }
   }
 
   &__column-stars{

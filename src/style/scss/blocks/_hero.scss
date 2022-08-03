@@ -5,6 +5,17 @@
   position: relative;
   background-color: #010225;
 
+  @media (max-width: 640px) {
+    padding-bottom: 70px;
+  }
+
+  &__content{
+
+    @media (max-width: 1279px) {
+      padding-left: 20px;
+    }
+  }
+
   &__title{
     font-size: 64px;
     font-weight: 400;

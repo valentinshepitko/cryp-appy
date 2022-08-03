@@ -4,6 +4,10 @@
   padding-bottom: 160px;
   background-color: $dark-blue;
 
+  @media (max-width: 640px) {
+    padding-bottom: 70px;
+  }
+
   &__title{
     font-size: 40px;
     font-weight: 400;
