@@ -332,10 +332,23 @@ img {
 .launch {
   padding-top: 188px;
   padding-bottom: 160px;
+  position: relative;
+  background-color: #0C0D2E;
 }
 @media (max-width: 640px) {
   .launch {
     padding-bottom: 70px;
+  }
+}
+.launch__background {
+  position: absolute;
+  left: -201px;
+  transform: rotate(90deg);
+  top: -155px;
+}
+@media (max-width: 1279px) {
+  .launch__background {
+    display: none;
   }
 }
 .launch__title {
@@ -684,6 +697,7 @@ img {
   background-color: #0C0D2E;
   border-radius: 8px;
   padding-bottom: 120px;
+  position: relative;
 }
 .buy__title {
   padding-top: 140px;
@@ -727,6 +741,24 @@ img {
   background-color: #159BE8;
   color: white;
   transition: ease-in-out 0.3s;
+}
+.buy__background {
+  position: absolute;
+}
+@media (max-width: 1279px) {
+  .buy__background {
+    display: none;
+  }
+}
+.buy__background2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 1279px) {
+  .buy__background2 {
+    display: none;
+  }
 }
 
 .footer {

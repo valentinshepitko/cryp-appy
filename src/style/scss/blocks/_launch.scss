@@ -2,9 +2,22 @@
 
   padding-top: 188px;
   padding-bottom: 160px;
+  position: relative;
+  background-color: $dark-blue;
 
   @media (max-width: 640px) {
     padding-bottom: 70px;
+  }
+
+  &__background{
+    position: absolute;
+    left: -201px;
+    transform: rotate(90deg);
+    top: -155px;
+
+    @media (max-width: 1279px) {
+      display: none;
+    }
   }
 
   &__title{
