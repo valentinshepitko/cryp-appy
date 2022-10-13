@@ -388,7 +388,7 @@ img {
 .launch__column-title:before {
   position: absolute;
   content: "";
-  background-image: url("../../../../src/img/launch-icon.png");
+  background-image: url("../../../src/img/launch-icon.png");
   width: 20px;
   height: 20px;
   top: -30px;
@@ -402,7 +402,7 @@ img {
 .launch__column-title_left:before {
   position: absolute;
   content: "";
-  background-image: url("../../../../src/img/launch-icon.png");
+  background-image: url("../../../src/img/launch-icon.png");
   width: 20px;
   height: 20px;
   top: -30px;
@@ -478,7 +478,7 @@ img {
 .mobile__link-holder:after {
   position: absolute;
   content: "";
-  background-image: url("../../../../src/img/button-frame.svg");
+  background-image: url("../../../src/img/button-frame.svg");
   width: 70px;
   height: 70px;
   left: 136px;
